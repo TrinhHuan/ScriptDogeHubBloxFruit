@@ -323,10 +323,10 @@ local v15 = v14:CreateWindow({
 });
 local v16 = {
     Home = v15:AddTab({
-        Title = "Thông Tin"
+        Title = "Admin Info"
     }),
     Main = v15:AddTab({
-        Title = "Cày"
+        Title = "Cày Level"
     }),
     Sea = v15:AddTab({
         Title = "Sự Kiện"
@@ -338,7 +338,7 @@ local v16 = {
         Title = "Cài Đặt"
     }),
     Status = v15:AddTab({
-        Title = "Máy Chủ"
+        Title = "Server"
     }),
     Stats = v15:AddTab({
         Title = "Chỉ Số"
@@ -353,10 +353,10 @@ local v16 = {
         Title = "Giả"
     }),
     Fruit = v15:AddTab({
-        Title = "Trái"
+        Title = "Fruits"
     }),
     Raid = v15:AddTab({
-        Title = "Tập Kích"
+        Title = "Raid"
     }),
     Race = v15:AddTab({
         Title = "Tộc"
@@ -2678,7 +2678,7 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
 end
 v16.Home:AddButton({
     Title = "Facebook",
-    Description = "Giao Lưu",
+    Description = "Acc Admin",
     Callback = function()
         setclipboard("https://www.facebook.com /trinh.nhu.huan.cr7");
     end
@@ -2885,7 +2885,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "Bật Haki Màu Pháo Đài",
+    Title = "Bật Aura Màu",
     Description = "",
     Default = false
 });
@@ -3658,9 +3658,9 @@ if Sea3 then
     });
     function UpdateKitsune()
         if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-            v499:SetDesc("Đảo Cáo : ✅️");
+            v499:SetDesc("Đảo Kitsune : ✅️");
         else
-            v499:SetDesc("Đảo Cáo : ❌️");
+            v499:SetDesc("Đảo Kitsune : ❌️");
         end
     end
     spawn(function()
@@ -3671,7 +3671,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "Định Vị Đảo Cáo",
+        Title = "Định Vị Đảo Kitsune",
         Description = "",
         Default = false
     });
@@ -3715,7 +3715,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Bay Vô Đảo Cáo",
+        Title = "Bay Vô Đảo Kitsune",
         Description = "",
         Default = false
     });
@@ -3968,7 +3968,7 @@ if Sea3 then
             _G.AutoFindMirage = false;
             if not v513 then
                 v14:Notify({
-                    Title = "TBoy Roblox",
+                    Title = "Huân Super",
                     Content = "Đảo Bí Ẩn Tìm Thấy",
                     Duration = 10
                 });
@@ -4062,7 +4062,7 @@ if Sea3 then
             _G.AutoFindFrozen = false;
             if not v513 then
                 v14:Notify({
-                    Title = "TBoy Roblox",
+                    Title = "Huân Super",
                     Content = "Đảo Leviathan Tìm Thấy",
                     Duration = 10
                 });
@@ -5341,7 +5341,7 @@ spawn(function()
     end
 end);
 local v78 = v16.ITM:AddToggle("ToggleAutoRainbowHaki", {
-    Title = "Haki 7 Màu",
+    Title = "Aura 7 Màu",
     Description = "",
     Default = false
 });
@@ -7200,7 +7200,7 @@ v16.Visual:AddButton({
     end
 });
 v16.Visual:AddInput("Input_Level", {
-    Title = "Cấp",
+    Title = "Level",
     Default = "",
     Placeholder = "Nhập",
     Numeric = false,
@@ -7220,7 +7220,7 @@ v16.Visual:AddInput("Input_EXP", {
     end
 });
 v16.Visual:AddInput("Input_Beli", {
-    Title = "Tiền",
+    Title = "Tiền Beli",
     Default = "",
     Placeholder = "Nhập",
     Numeric = false,
@@ -7248,8 +7248,8 @@ for v335, v336 in next, v122 do
         table.insert(ShopDevilSell, v336.Name);
     end
 end
-_G.SelectFruit = "Dragon-Dragon";
-_G.PermanentFruit = "Dragon-Dragon";
+_G.SelectFruit = "Dragon";
+_G.PermanentFruit = "Dragon";
 _G.AutoBuyFruitSniper = false;
 _G.AutoSwitchPermanentFruit = false;
 local v123 = v16.Fruit:AddDropdown("DropdownFruit", {
@@ -7879,87 +7879,87 @@ spawn(function()
             if _G.Autofruit then
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Rocket-Rocket"
+                    [2] = "Rocket"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Spin-Spin"
+                    [2] = "Spin"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Chop-Chop"
+                    [2] = "Blade"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Spring-Spring"
+                    [2] = "Spring"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Bomb-Bomb"
+                    [2] = "Bomb"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Smoke-Smoke"
+                    [2] = "Smoke"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Spike-Spike"
+                    [2] = "Spike"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Flame-Flame"
+                    [2] = "Flame"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Falcon-Falcon"
+                    [2] = "Falcon"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Ice-Ice"
+                    [2] = "Ice"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Sand-Sand"
+                    [2] = "Sand"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Dark-Dark"
+                    [2] = "Dark"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Ghost-Ghost"
+                    [2] = "Ghost"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Diamond-Diamond"
+                    [2] = "Diamond"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Light-Light"
+                    [2] = "Light"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Rubber-Rubber"
+                    [2] = "Rubber"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
                 local v807 = {
                     [1] = "LoadFruit",
-                    [2] = "Barrier-Barrier"
+                    [2] = "Barrier"
                 };
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(v807));
             end
@@ -8346,7 +8346,7 @@ v16.Shop:AddButton({
     end
 });
 v16.Shop:AddButton({
-    Title = "Duel Katana",
+    Title = "Dual Katana",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem", "Duel Katana");
@@ -8396,28 +8396,28 @@ v16.Shop:AddButton({
 });
 local v56 = v16.Shop:AddSection("Võ");
 v16.Shop:AddButton({
-    Title = "Black Leg",
+    Title = "Dark Step",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg");
     end
 });
 v16.Shop:AddButton({
-    Title = "Electro",
+    Title = "Electric",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro");
     end
 });
 v16.Shop:AddButton({
-    Title = "Fishman Karate",
+    Title = "Water Kungfu",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate");
     end
 });
 v16.Shop:AddButton({
-    Title = "Dragon Claw",
+    Title = "Dragon Breath",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward", "DragonClaw", "1");
