@@ -314,7 +314,7 @@ v5:Destroy();
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
     Title = "Doge Hub",
-    SubTitle = "By Trịnh Huân",
+    SubTitle = "by Trịnh Huân",
     TabWidth = 160,
     Theme = "Dark",
     Acrylic = false,
