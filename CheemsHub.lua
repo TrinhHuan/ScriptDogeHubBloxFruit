@@ -4634,13 +4634,13 @@ if Sea3 then
         while task.wait() do
             pcall(function()
                 local v793 = game:GetService("Lighting").Sky.MoonTextureId;
-                if (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
+                if (v793 == "http://www.roblox.com/asset/?id=75151634611367") then
                     FullMoonStatus = "100%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=75151634611367") then
                     FullMoonStatus = "75%";
                 elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "50%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=75151634611367") then
                     FullMoonStatus = "25%";
                 elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "15%";
