@@ -350,7 +350,7 @@ local v16 = {
         Title = "Dịch Chuyển"
     }),
     Visual = v15:AddTab({
-        Title = "Giả"
+        Title = "Fake"
     }),
     Fruit = v15:AddTab({
         Title = "Trái Ác Quỷ"
@@ -2885,7 +2885,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "Bật Aura Màu",
+    Title = "Bật Aura Màu Pháo Đài",
     Description = "",
     Default = false
 });
@@ -4634,15 +4634,15 @@ if Sea3 then
         while task.wait() do
             pcall(function()
                 local v793 = game:GetService("Lighting").Sky.MoonTextureId;
-                if (v793 == "http://www.roblox.com/asset/?id=9709149431") then
+                if (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "100%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=9709149052") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "75%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=9709143733") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "50%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=9709150401") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "25%";
-                elseif (v793 == "http://www.roblox.com/asset/?id=9709149680") then
+                elseif (v793 == "http://www.roblox.com/asset/?id=114284983762427") then
                     FullMoonStatus = "15%";
                 else
                     FullMoonStatus = "0%";
@@ -6188,7 +6188,7 @@ spawn(function()
 end);
 if (Sea2 or Sea3) then
     local v538 = v16.ITM:AddToggle("ToggleHakiColor", {
-        Title = "Mua Màu Haki",
+        Title = "Mua Màu Aura",
         Description = "",
         Default = false
     });
@@ -6333,7 +6333,7 @@ spawn(function()
     end
 end);
 local v87 = v16.Setting:AddToggle("ToggleAutoKen", {
-    Title = "Bật Haki Quan Sât",
+    Title = "Bật Haki Quan Sát",
     Description = "",
     Default = false
 });
