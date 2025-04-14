@@ -326,7 +326,7 @@ local v16 = {
         Title = "Admin Info"
     }),
     Main = v15:AddTab({
-        Title = "Cày Level"
+        Title = "Cày Farm"
     }),
     Sea = v15:AddTab({
         Title = "Sự Kiện"
@@ -353,7 +353,7 @@ local v16 = {
         Title = "Giả"
     }),
     Fruit = v15:AddTab({
-        Title = "Fruits"
+        Title = "Trái Ác Quỷ"
     }),
     Raid = v15:AddTab({
         Title = "Raid"
@@ -2678,7 +2678,7 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
 end
 v16.Home:AddButton({
     Title = "Facebook",
-    Description = "Acc Admin",
+    Description = "Admin Account",
     Callback = function()
         setclipboard("https://www.facebook.com /trinh.nhu.huan.cr7");
     end
@@ -3651,9 +3651,9 @@ spawn(function()
     end
 end);
 if Sea3 then
-    local v498 = v16.Sea:AddSection("Đảo Cáo");
+    local v498 = v16.Sea:AddSection("Đảo Kitsune");
     local v499 = v16.Sea:AddParagraph({
-        Title = "Trạng Thái Đảo Cáo",
+        Title = "Trạng Thái Đảo Kitsune",
         Content = ""
     });
     function UpdateKitsune()
