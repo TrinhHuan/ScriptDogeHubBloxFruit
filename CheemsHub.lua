@@ -8750,7 +8750,7 @@ v16.Misc:AddButton({
     end
 });
 local v153 = v16.Misc:AddToggle("ToggleAntiBand", {
-    Title = "Chống Ban",
+    Title = "AnTiBan",
     Description = "",
     Default = true
 });
