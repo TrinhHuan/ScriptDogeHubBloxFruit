@@ -8750,7 +8750,7 @@ v16.Misc:AddButton({
     end
 });
 local v153 = v16.Misc:AddToggle("ToggleAntiBand", {
-    Title = "Chống Band",
+    Title = "Chống Ban",
     Description = "",
     Default = true
 });
@@ -9324,7 +9324,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "By Trịnh Huân",
+    Title = "Script by Trịnh Huân",
     Content = "Tải Xong",
     Duration = 10
 });
