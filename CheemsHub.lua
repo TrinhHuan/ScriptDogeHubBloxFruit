@@ -3094,14 +3094,14 @@ end);
 if Sea3 then
     local v484 = v16.Main:AddSection("Xương");
     local v485 = v16.Main:AddParagraph({
-        Title = "Xương Trạng Thái",
+        Title = "Trạng Thái Xương",
         Content = ""
     });
     spawn(function()
         pcall(function()
             while wait() do
                 local v768 = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones", "Check");
-                v485:SetDesc("Bạn Có: " .. tostring(v768) .. " Xương");
+                v485:SetDesc("Bạn Đang Có: " .. tostring(v768) .. " Xương");
             end
         end);
     end);
