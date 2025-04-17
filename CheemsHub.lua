@@ -3101,7 +3101,7 @@ if Sea3 then
         pcall(function()
             while wait() do
                 local v768 = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones", "Check");
-                v485:SetDesc("Mày Có: " .. tostring(v768) .. " Xương");
+                v485:SetDesc("Bạn Có: " .. tostring(v768) .. " Xương");
             end
         end);
     end);
