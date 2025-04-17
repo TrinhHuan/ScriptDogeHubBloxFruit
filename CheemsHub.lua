@@ -6332,7 +6332,7 @@ spawn(function()
         end);
     end
 end);
-local v87 = v16.Setting:AddToggle("ToggleAutoE", {
+local v87 = v16.Setting:AddToggle("ToggleAutoKen", {
     Title = "Bật Haki Quan Sát",
     Description = "",
     Default = false
